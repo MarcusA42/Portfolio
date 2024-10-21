@@ -1,0 +1,169 @@
+{
+	"asset": {
+		"generator": "SOLIDWORKSGLTF",
+		"version" : "2.0"
+	},
+"extensionsUsed": [ "KHR_lights_punctual", "Solidworks_custom_properties", "KHR_draco_mesh_compression"],
+"extensionsRequired": [ "KHR_draco_mesh_compression" ],
+	"scene" : 0,
+	"scenes": [
+		{
+			"name": "Default - <Default>_Display State 1",
+			"nodes": [
+				0, 1]
+		}
+	],
+	"nodes": [
+		{
+			"matrix": [
+				0.707107,					0,					-0.707107,					0,
+				-0.408204,					0.816541,					-0.408204,					0,
+				0.577382,					0.577288,					0.577382,					0,
+				0.367561,					0.358691,					0.37544,					1
+			]
+			,"camera": 0
+			,"name": "current"		}
+,
+		{
+			"mesh": 0
+			,"name": "SecA_Prob3"		}
+	],
+	"cameras": [
+		{
+			"type": "orthographic",
+			"orthographic" : {
+				"xmag": 1,
+				"ymag" : 1,
+				"zfar" : 100,
+				"znear" : 0.01
+			}
+		}
+	],
+	"meshes" : [
+		{
+			"primitives" : [
+				{
+					"attributes" : {
+					"POSITION" : 1,
+					"NORMAL" : 2,
+					"TEXCOORD_0" : 3
+					},
+					"indices" : 0,
+					"mode": 4,
+					"material" : 1
+					,"extensions": {
+					"KHR_draco_mesh_compression": {
+					"bufferView": 0,
+					"attributes" : {
+					"POSITION": 0,
+					"NORMAL" : 1,
+					"TEXCOORD_0" : 2
+					}
+					}
+					}
+				}
+			]
+		}
+	],
+	"accessors" : [
+			{
+				"componentType" : 5123
+				,"count" : 1662
+				,"type" : "SCALAR"
+			},
+			{
+				"componentType" : 5126
+				,"count" : 566
+				,"type" : "VEC3"
+				,"min" : [-1.59893259e-02, -2.40000002e-02, -1.60000008e-02]
+				,"max" : [4.69999984e-02, 1.40000004e-02, 1.60000008e-02]
+			},
+			{
+				"componentType" : 5126
+				,"count" : 566
+				,"type" : "VEC3"
+			},
+			{
+				"componentType" : 5126
+				,"count" : 566
+				,"type" : "VEC2"
+			}
+	],
+	"materials": [
+			{
+				"pbrMetallicRoughness": {
+					"baseColorFactor": [
+						0.498039, 0.498039, 0.498039, 1
+					]
+					,"metallicFactor": 0
+					,"roughnessFactor": 1
+				}
+			},
+			{
+				"name": "shiny galvanized"
+					,"normalTexture": {
+						"index": 1
+						,"scale": 0.3
+					}
+				,"pbrMetallicRoughness": {
+					"baseColorTexture": {
+						"index": 0
+					}
+					,"baseColorFactor": [
+						1, 1, 1, 1
+					]
+					,"metallicFactor": 1
+					,"roughnessFactor": 0.15
+				}
+			}
+	],
+	"textures": [
+			{
+				"sampler": 0,
+				"source": 0,
+				"name": "galvanized.jpg"
+			},
+			{
+				"sampler": 1,
+				"source": 1,
+				"name": "n_galvanized1_n.dds"
+			}
+	],
+	"images": [
+			{
+				"uri": "galvanized.jpg"
+			},
+			{
+				"uri": "n_galvanized1_n.dds"
+			}
+	],
+	"samplers": [
+			{
+				"magFilter": 9729,
+				"minFilter" : 9729,
+				"wrapS" : 10497,
+				"wrapT" : 10497,
+				"name": "DefaultSampler"
+			},
+			{
+				"magFilter": 9729,
+				"minFilter" : 9729,
+				"wrapS" : 10497,
+				"wrapT" : 10497,
+				"name": "DefaultSampler"
+			}
+	],
+	"bufferViews" : [
+			{
+				"buffer": 0
+				,"byteOffset" : 0
+				,"byteLength" : 2232
+			}
+	],
+	"buffers" : [
+			{
+				"byteLength": 2232
+				,"uri" : "data.bin"
+			}
+	]
+}
