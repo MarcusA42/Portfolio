@@ -50,10 +50,10 @@ function main() {
 	//Set up camera settings
 	const fov = 45;
 	const aspect = 2; // the canvas default
-	const near = 0.1;
-	const far = 10;
+	const near = 100;
+	const far = 10000;
 	const camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
-	camera.position.set( 0, 0.5, 1 );
+	camera.position.set( 0, 500, 1000 );
 
 	//set up controls
 	const controls = new OrbitControls( camera, canvas );
